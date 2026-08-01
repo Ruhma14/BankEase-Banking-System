@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bank Account Management System</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Animated Background -->
+    <div class="background"></div>
+
+    <!-- Header -->
+    <header>
+
+        <div class="logo">
+            <i class="fa-solid fa-building-columns"></i>
+            <h1>Bank Account Management</h1>
+        </div>
+
+        <p>Manage your deposits and withdrawals with ease</p>
+
+    </header>
+
+
+
+    <!-- Dashboard -->
+    <section class="dashboard">
+
+        <!-- Balance -->
+        <div class="card balance-card">
+
+            <div class="icon">
+                <i class="fa-solid fa-wallet"></i>
+            </div>
+
+            <h3>Current Balance</h3>
+
+            <h2 id="balance">$0</h2>
+
+        </div>
+
+        <!-- Deposits -->
+
+        <div class="card deposit-card">
+
+            <div class="icon">
+                <i class="fa-solid fa-arrow-down"></i>
+            </div>
+
+            <h3>Total Deposits</h3>
+
+            <h2 id="totalDeposits">$0</h2>
+
+        </div>
+
+        <!-- Withdrawals -->
+
+        <div class="card withdraw-card">
+
+            <div class="icon">
+                <i class="fa-solid fa-arrow-up"></i>
+            </div>
+
+            <h3>Total Withdrawals</h3>
+
+            <h2 id="totalWithdrawals">$0</h2>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Main Container -->
+
+    <main class="container">
+
+        <!-- Left Side -->
+
+        <div class="left">
+
+            <!-- Deposit -->
+
+            <div class="glass">
+
+                <h2>
+                    <i class="fa-solid fa-money-bill-wave"></i>
+                    Deposit Money
+                </h2>
+
+                <input
+                    type="number"
+                    id="depositAmount"
+                    placeholder="Enter amount">
+
+                <button id="depositBtn">
+                    Deposit
+                </button>
+
+            </div>
+
+
+            <!-- Withdraw -->
+
+            <div class="glass">
+
+                <h2>
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                    Withdraw Money
+                </h2>
+
+                <input
+                    type="number"
+                    id="withdrawAmount"
+                    placeholder="Enter amount">
+
+                <button id="withdrawBtn">
+                    Withdraw
+                </button>
+
+            </div>
+
+
+
+            <!-- Transaction History -->
+
+            <div class="glass">
+
+                <h2>
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    Transaction History
+                </h2>
+
+                <div
+                    id="transactionHistory"
+                    class="history">
+
+                    <p class="empty">
+                        No transactions yet.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Right Side -->
+
+        <div class="right">
+
+            <!-- Deposit List -->
+
+            <div class="glass">
+
+                <h2>
+                    <i class="fa-solid fa-circle-down"></i>
+                    Deposits
+                </h2>
+
+                <ul id="depositList">
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- Withdrawal List -->
+
+            <div class="glass">
+
+                <h2>
+                    <i class="fa-solid fa-circle-up"></i>
+                    Withdrawals
+                </h2>
+
+                <ul id="withdrawList">
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- Quick Summary -->
+
+            <div class="glass summary">
+
+                <h2>
+                    <i class="fa-solid fa-chart-pie"></i>
+                    Summary
+                </h2>
+
+                <div class="summary-item">
+
+                    <span>Total Transactions</span>
+
+                    <strong id="transactionCount">
+                        0
+                    </strong>
+
+                </div>
+
+                <div class="summary-item">
+
+                    <span>Account Status</span>
+
+                    <strong class="active">
+                        Active
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- Toast Notification -->
+
+    <div id="toast"></div>
+
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Bank Account Management System
+
+        </p>
+
+        <p>
+
+            Designed with ❤️ using HTML, CSS & JavaScript
+
+        </p>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
