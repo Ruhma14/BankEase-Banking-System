@@ -8,7 +8,7 @@ The application allows users to deposit and withdraw money, track their account 
 
 ## Live Demo
 
- https://YOUR_GITHUB_USERNAME.github.io/bank-account-management-system/
+https://github.com/Ruhma14/Bank-Account-Management-System
 
 
 
@@ -95,7 +95,7 @@ bank-account-management-system/
 Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/bank-account-management-system.git
+git clone https://github.com/Ruhma14/Bank-Account-Management-System
 ```
 
 Open the project folder.
