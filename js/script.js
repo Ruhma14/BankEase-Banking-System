@@ -1,5 +1,5 @@
 // ======================================
-// Bank Account Class (Original Logic)
+// Bank Account Class 
 // ======================================
 
 class BankAccount {
@@ -72,6 +72,8 @@ class BankAccount {
 // ======================================
 
 const myAccount = new BankAccount();
+// Load saved data
+loadAccount();
 
 // ======================================
 // Select HTML Elements
@@ -225,16 +227,18 @@ depositBtn.addEventListener("click", () => {
   const message = myAccount.deposit(amount);
 
   if (message.startsWith("Successfully")) {
-    showToast(message, true);
+  showToast(message, true);
 
-    depositAmount.value = "";
+  depositAmount.value = "";
 
-    updateDashboard();
+  updateDashboard();
 
-    updateTransactionHistory();
-  } else {
-    showToast(message, false);
-  }
+  updateTransactionHistory();
+
+  saveAccount();
+} else {
+  showToast(message, false);
+}
 });
 
 // ======================================
@@ -247,16 +251,18 @@ withdrawBtn.addEventListener("click", () => {
   const message = myAccount.withdraw(amount);
 
   if (message.startsWith("Successfully")) {
-    showToast(message, true);
+  showToast(message, true);
 
-    withdrawAmount.value = "";
+  withdrawAmount.value = "";
 
-    updateDashboard();
+  updateDashboard();
 
-    updateTransactionHistory();
-  } else {
-    showToast(message, false);
-  }
+  updateTransactionHistory();
+
+  saveAccount();
+} else {
+  showToast(message, false);
+}
 });
 
 // ======================================

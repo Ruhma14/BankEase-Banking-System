@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,13 @@
     <title>Bank Account Management System</title>
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -89,25 +90,17 @@
 
         <!-- Left Side -->
 
-        <div class="left">
+        <div class="left-panel">
 
             <!-- Deposit -->
 
             <div class="glass">
 
-                <h2>
-                    <i class="fa-solid fa-money-bill-wave"></i>
-                    Deposit Money
-                </h2>
+                <h2><i class="fa-solid fa-money-bill-wave"></i>Deposit Money</h2>
 
-                <input
-                    type="number"
-                    id="depositAmount"
-                    placeholder="Enter amount">
+                <input type="number" id="depositAmount" placeholder="Enter amount">
 
-                <button id="depositBtn">
-                    Deposit
-                </button>
+                <button id="depositBtn">Deposit</button>
 
             </div>
 
@@ -116,19 +109,11 @@
 
             <div class="glass">
 
-                <h2>
-                    <i class="fa-solid fa-hand-holding-dollar"></i>
-                    Withdraw Money
-                </h2>
+                <h2><i class="fa-solid fa-hand-holding-dollar"></i>Withdraw Money</h2>
 
-                <input
-                    type="number"
-                    id="withdrawAmount"
-                    placeholder="Enter amount">
+                <input type="number" id="withdrawAmount" placeholder="Enter amount">
 
-                <button id="withdrawBtn">
-                    Withdraw
-                </button>
+                <button id="withdrawBtn">Withdraw</button>
 
             </div>
 
@@ -138,18 +123,10 @@
 
             <div class="glass">
 
-                <h2>
-                    <i class="fa-solid fa-clock-rotate-left"></i>
-                    Transaction History
-                </h2>
+                <h2><i class="fa-solid fa-clock-rotate-left"></i>Transaction History</h2>
 
-                <div
-                    id="transactionHistory"
-                    class="history">
-
-                    <p class="empty">
-                        No transactions yet.
-                    </p>
+                <div id="transactionHistory" class="history">
+                    <p class="empty">No transactions yet.</p>
 
                 </div>
 
@@ -161,20 +138,14 @@
 
         <!-- Right Side -->
 
-        <div class="right">
+        <div class="right-panel">
 
             <!-- Deposit List -->
 
             <div class="glass">
 
-                <h2>
-                    <i class="fa-solid fa-circle-down"></i>
-                    Deposits
-                </h2>
-
-                <ul id="depositList">
-
-                </ul>
+                <h2><i class="fa-solid fa-circle-down"></i>Deposits</h2>
+                <ul id="depositList"> </ul>
 
             </div>
 
@@ -184,83 +155,53 @@
 
             <div class="glass">
 
-                <h2>
-                    <i class="fa-solid fa-circle-up"></i>
-                    Withdrawals
-                </h2>
-
-                <ul id="withdrawList">
-
-                </ul>
+                <h2><i class="fa-solid fa-circle-up"></i>Withdrawals</h2>
+                <ul id="withdrawList"></ul>
 
             </div>
-
-
 
             <!-- Quick Summary -->
 
             <div class="glass summary">
 
-                <h2>
-                    <i class="fa-solid fa-chart-pie"></i>
-                    Summary
-                </h2>
+                <h2><i class="fa-solid fa-chart-pie"></i>Summary</h2>
 
                 <div class="summary-item">
 
                     <span>Total Transactions</span>
-
-                    <strong id="transactionCount">
-                        0
-                    </strong>
+                    <strong id="transactionCount">0</strong>
 
                 </div>
-
                 <div class="summary-item">
 
                     <span>Account Status</span>
-
-                    <strong class="active">
-                        Active
-                    </strong>
+                    <strong class="active">Active</strong>
 
                 </div>
-
             </div>
-
         </div>
 
     </main>
-
-
 
     <!-- Toast Notification -->
 
     <div id="toast"></div>
 
-
-
     <!-- Footer -->
-
     <footer>
 
         <p>
-
             © 2026 Bank Account Management System
-
         </p>
-
         <p>
-
-            Designed with ❤️ using HTML, CSS & JavaScript
-
+            Designed with ❤️ using HTML, CSS & JavaScript by Ruhma
         </p>
 
     </footer>
 
-
-
-    <script src="script.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
+
 </html>
